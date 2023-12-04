@@ -212,7 +212,7 @@
     .custom-link:hover {
       color: #2e4374;
     }
-    
+
     //Opacity in register
     opacity: 0;
     transform: translateY(20px);
@@ -461,6 +461,65 @@
   }
 }
 
+.socialBox {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 15px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  width: 60%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(23, 107, 135, 0.5);
+}
+
+.socialBox svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.socialBox:hover {
+  color: #2B2A4C;
+}
+
+.socialBox:hover svg {
+  margin-left: 25px;
+}
+
+.socialBoxNav {
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 5px;
+  width: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(23, 107, 135, 0.5);
+}
+
+.socialBoxNav svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.socialBoxNav:hover {
+  color: #2B2A4C;
+}
+
+.socialBoxNav:hover svg {
+  margin-left: 25px;
+}
 /* Tambahkan kelas ini ke elemen .formContainer pada saat memuat halaman */
 .formWrapper.loaded {
   opacity: 1;
@@ -473,14 +532,18 @@
 }
 
 .home {
-  background-color: #a7bcff;
+  background-image: url("assets/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 
   .container {
-    border: 1px solid white;
+    // border: 1px solid white;
     // border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -492,17 +555,17 @@
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      background-color: rgba(23, 107, 135, 0.6);
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #5FBDFF;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
-        color: #ddddf7;
+        color: #2B2A4C;
 
         .logo {
           font-weight: bold;
@@ -517,15 +580,15 @@
 
           img {
             background-color: #ddddf7;
-            height: 24px;
-            width: 24px;
+            height: 36px;
+            width: 36px;
             border-radius: 50%;
             object-fit: cover;
           }
 
           button {
-            background-color: #5d5b8d;
-            color: #ddddf7;
+            background-color: #2B2A4C;
+            color: #fff;
             font-size: 10px;
             border: none;
             cursor: pointer;
@@ -533,11 +596,17 @@
               position: absolute;
               bottom: 10px;
             }
+
+            
+          }
+
+          span {
+            padding: 5px 5px;
           }
         }
       }
       .search {
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid #2B2A4C;
 
         .searchForm {
           padding: 10px;
@@ -549,7 +618,7 @@
             outline: none;
 
             &::placeholder {
-              color: lightgray;
+              color: #87C4FF;
             }
           }
         }
@@ -562,9 +631,13 @@
         gap: 10px;
         color: white;
         cursor: pointer;
+        transition: 0.3s ease;
+
 
         &:hover {
-          background-color: #2f2d52;
+          background-color: #5FBDFF;
+          color: #2B2A4C;
+
         }
 
         img {
@@ -581,7 +654,7 @@
           }
           p {
             font-size: 14px;
-            color: lightgray;
+            color: white;
           }
         }
       }
@@ -591,12 +664,21 @@
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #6DB9EF;
         display: flex;
+        gap: 10px;
         align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
         padding: 10px;
-        color: lightgray;
+        color: #2B2A4C;
+
+        
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
       }
 
       .chatIcons {
@@ -610,7 +692,10 @@
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-image: url("assets/cover.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
@@ -623,7 +708,7 @@
           .messageInfo {
             display: flex;
             flex-direction: column;
-            color: gray;
+            color: #2B2A4C;
             font-weight: 300;
 
             img {
@@ -657,7 +742,8 @@
             .messageContent {
               align-items: flex-end;
               p {
-                background-color: #8da4f1;
+                background-color: #5FBDFF;
+                // border : 1px solid #2B2A4C;
                 color: white;
                 border-radius: 10px 0px 10px 10px;
               }
@@ -678,11 +764,11 @@
           width: 100%;
           border: none;
           outline: none;
-          color: #2f2d52;
+          color: #2B2A4C;
           font-size: 18px;
 
           &::placeholder {
-            color: lightgray;
+            color: #87C4FF;
           }
         }
 
@@ -698,11 +784,22 @@
 
           button {
             border: none;
-            padding: 10px 15px;
+            padding: 10px 35px;
             color: white;
-            background-color: #8da4f1;
+            background-color: #6DB9EF;
             cursor: pointer;
+            transition: 0.5s ease-in-out;
+            margin: 0 20px 0 20px; // Atas Kanan Bawah Kiri
+
+
+            &:hover {
+              background-color: #2B2A4C;
+              color: #fff;
+    
+            }
           }
+
+
         }
       }
     }

@@ -1,0 +1,191 @@
+.banner {
+  margin-top: 0;
+  padding: 20px 0 0 0;
+  background-image: url("../assets/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: #176b87;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-right: 15px;
+  margin-bottom: 16px;
+  display: inline-block;
+  color: #fff;
+  font-family: "Gabriela", serif;
+  width: 240px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.banner .tagline:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(23, 107, 135, 0.5);
+}
+
+.banner h1 {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  display: block;
+  width: 96%;
+}
+
+.banner p {
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 0.8px;
+  line-height: 1.6em;
+  width: 95%;
+}
+
+.banner .socialBox {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  width: 30%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(23, 107, 135, 0.5);
+}
+
+.banner .socialBox svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner .socialBox:hover {
+  color: #176b87;
+}
+
+.banner .socialBox:hover svg {
+  margin-left: 25px;
+}
+
+.banner .socialBoxMember {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 8px;
+  width: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(23, 107, 135, 0.5);
+}
+
+.banner .socialBoxMember svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner .socialBoxMember:hover {
+  color: #176b87;
+}
+
+.banner .socialBoxMember:hover svg {
+  margin-left: 25px;
+}
+
+.bannerFlex {
+  display: flex;
+  align-items: center;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 94%;
+  margin: 0 20px;
+}
+
+.supportLogo {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.createdMember {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  max-width: 100%;
+}
+
+.banner h2 {
+  margin: 30px 0 10px 0;
+  font-family: "Gabriela", serif;
+}
+
+.createdColumn h3 {
+  margin-bottom: 15px;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+.image-wrapper {
+  max-width: 35%;
+  padding: 0 20px;
+  text-align: right;
+}
+
+.image-wrapper .image-inner {
+  border-radius: 30%;
+  -webkit-box-shadow: 1px 10px 15px #a6f6ff;
+  -moz-box-shadow: 1px 10px 15px #a6f6ff;
+  box-shadow: 1px 10px 15px #a6f6ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.supportLogo .socialImage {
+  justify-content: space-between;
+  max-width: 100%;
+  display: block;
+  transition: all 0.5s ease;
+  height: 300px;
+}
+
+.image-wrapper .socialImage:hover {
+  transform: scale(1.1);
+}
+
+.memberColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
