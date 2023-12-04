@@ -137,7 +137,7 @@ const Banner = () => {
                           </div>{" "}
                           <div className="createdColumn">
                             <h3>Muhammad Kurniawan Syamsudin</h3>
-                            <h3>21120012</h3>
+                            <h3>20120758</h3>
                             <a
                               className="socialBoxMember"
                               href="https://www.instagram.com/wawan_orian/"
@@ -163,7 +163,7 @@ const Banner = () => {
                           </div>{" "}
                           <div className="createdColumn">
                             <h3>Aldi Hidayatullah</h3>
-                            <h3>21120012</h3>
+                            <h3>20120097</h3>
                             <a
                               className="socialBoxMember"
                               href="https://www.instagram.com/aldi_hdytulloh/"
@@ -187,7 +187,7 @@ const Banner = () => {
                           </div>{" "}
                           <div className="createdColumn">
                             <h3>Muhammad Syahdan Fajriansyah</h3>
-                            <h3>21120012</h3>
+                            <h3>20120679</h3>
                             <a
                               className="socialBoxMember"
                               href="https://www.instagram.com/iqbaal.e/"
@@ -213,7 +213,7 @@ const Banner = () => {
                           </div>{" "}
                           <div className="createdColumn">
                             <h3>Nanda Luthfi Yahya</h3>
-                            <h3>21120012</h3>
+                            <h3>20120832</h3>
                             <a
                               className="socialBoxMember"
                               href="https://www.instagram.com/nandaluthfyy/"
